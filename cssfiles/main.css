@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+/* Navbar */
+nav {
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(70, 66, 66);
+    font-size: 18px;
+    font-weight: 600;
+    z-index: 999999999999999999;
+
+
+}
+
+.navbar-nav li a {
+    color: white;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+
+}
+
+.navbar-nav li a:hover {
+
+    color: #f4623a;
+
+}
+
+/* Home*/
+
+
+.home {
+    background-image: url('../images/bg-masthead.jpg');
+
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.layer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(110, 84, 61, 0.6);
+
+
+}
+
+.text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    color: white;
+    text-align: center;
+
+}
+
+h1 {
+    font-size: 50px;
+    padding-bottom: 25px;
+    text-align: center;
+
+}
+
+.line {
+    position: relative;
+}
+
+.line::after {
+    content: '';
+    height: 4px;
+    width: 10%;
+    position: absolute;
+    right: 40%;
+    bottom: 0px;
+    background-color: #f4623a;
+
+}
+
+p {
+    font-size: 20px;
+
+    padding-top: 0px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+button {
+    background-color: #f4623a;
+    border: none;
+    margin-top: 15px;
+}
+
+.home button a {
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+}
+
+.home button:hover {
+    background-color: #a73f22;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+
+}
+
+/*About*/
+.about {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+    width: 100%;
+    background-color: #f4623a;
+    align-items: center;
+    color: white;
+
+    margin-bottom: 20px;
+}
+
+.about h2 {
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+button a {
+    font-weight: 700;
+}
+
+.L2::after {
+    content: '';
+    height: 3px;
+    width: 15%;
+    position: absolute;
+    right: 45%;
+    bottom: 0px;
+    background-color: white;
+}
+
+/*service*/
+.service {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+    padding-top: 50px;
+
+}
+
+.L3::after {
+    content: '';
+    height: 3px;
+    width: 5%;
+    position: absolute;
+    right: 48%;
+    bottom: 0px;
+}
+
+.items i {
+    color: #f4623a;
+    font-size: 40px;
+
+    padding: 10px 0px;
+}
+
+.service p,
+.contact p {
+    font-size: 18px;
+}
+
+
+/*Portfolio*/
+
+
+.Image {
+    position: relative;
+}
+
+.Layer-text {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    background-color: #f4623a;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .8;
+    text-align: center;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Image:hover .Layer-text {
+    display: flex;
+}
+
+.BB {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+
+
+
+
+}
+
+
+/*Contact*/
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.contact button {
+    background-color: #f4623a;
+
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+}
+
+
+form input:focus,
+form textarea:focus {
+    border-color: #f4623a !important;
+    box-shadow: 0 0 5px 0.25rem #f4623a !important;
+}
+
+form ::placeholder {
+    font-size: 18px;
+}
+
+.submit-btn {
+    font-weight: bold;
+}

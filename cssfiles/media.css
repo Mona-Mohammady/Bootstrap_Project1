@@ -1,0 +1,49 @@
+/* Navbar */
+@media screen and (max-width:992px) {
+  .navbar-nav li {
+    padding: 25px 0px !important;
+  }
+}
+
+
+/* Home & About*/
+@media screen and (max-width:600px) {
+
+  .text h1,
+  .about h2 {
+
+    font-size: 22px;
+    padding-bottom: 10px;
+
+
+
+  }
+
+
+  .home p,
+  .about p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+  }
+
+  .about {
+    height: 100vh;
+  }
+
+  .items {
+    padding-bottom: 50px;
+  }
+
+
+
+  form {
+    margin: 0px 30px;
+  }
+
+  .submit-btn {
+    padding: 15px !important;
+  }
+
+
+}
